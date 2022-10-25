@@ -22,7 +22,7 @@ export default {
   },
   created () {
     axios.get('https://my-json-server.typicode.com/Code-Pop/Real-World_Vue-3/events')
-      .then(response => { console.log('events', response.data) })
+      .then(response => { this.events = response.data })
       .catch(error => { console.log(error) })
   }
 }
