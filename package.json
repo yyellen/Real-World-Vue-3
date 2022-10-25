@@ -36,6 +36,7 @@
     "eslintIntegration": true,
     "insertPragma": false,
     "trailingComma": "none",
-    "arrowParens": "avoid"
+    "arrowParens": "avoid",
+    "space-before-function-paren": 0
   }
 }
