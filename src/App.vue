@@ -3,6 +3,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
+  <h1>Event For Good</h1>
   <router-view/>
 </template>
 
@@ -27,4 +28,9 @@ nav {
     }
   }
 }
+
+h4 {
+  font-size: 20px;
+}
+
 </style>
