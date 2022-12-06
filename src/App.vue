@@ -3,7 +3,7 @@
     <router-link :to="{ name: 'EventList' }">Events</router-link> |
     <router-link :to="{ name: 'about' }">About</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
@@ -31,5 +31,4 @@ nav {
 h4 {
   font-size: 20px;
 }
-
 </style>

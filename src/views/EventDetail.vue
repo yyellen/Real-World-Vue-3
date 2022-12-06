@@ -11,12 +11,12 @@ import EventServices from '@/services/EventServices'
 
 export default {
   props: ['id'],
-  data () {
+  data() {
     return {
       event: {}
     }
   },
-  created () {
+  created() {
     EventServices.getEvent(this.id)
       .then(response => {
         this.event = response.data
