@@ -39,6 +39,16 @@
       "date": "August 18, 2028",
       "time": "2:00",
       "organizer": "John Doe"
+    },
+    {
+      "id": "1f94cbb0-aed3-4b56-8ab9-43ca353fa151",
+      "category": "animal welfare",
+      "title": "Kangaroo Combing Competition",
+      "description": "What does this event look like?",
+      "location": "Outback",
+      "date": "Sept 4, 2025",
+      "time": "3:00",
+      "organizer": "John Doe"
     }
   ]
 }

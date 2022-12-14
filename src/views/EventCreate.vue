@@ -80,7 +80,7 @@ export default {
       }
       EventServices.postEvent(event)
         .then(() => {
-          // add event to Vuex stste
+          this.$store.commit('ADD_EVENT', event)
         })
         .catch(error => {
           console.log(error)
