@@ -45,6 +45,7 @@
 
 <script>
 import { v4 as uuidv4 } from 'uuid'
+import EventServices from '@/services/EventServices.js'
 
 export default {
   data() {
@@ -74,7 +75,13 @@ export default {
     onSubmit() {
       this.event.organizer = this.$store.state.user
       this.event.id = uuidv4()
-      console.log('Event:', this.event)
+      EventServices.postEvent(this.event)
+        .then(() => {
+          // add event to Vuex stste
+        })
+        .catch(error => {
+          console.log(error)
+        })
     }
   }
 }
