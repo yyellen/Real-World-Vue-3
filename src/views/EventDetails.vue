@@ -7,23 +7,15 @@
 </template>
 
 <script>
-import EventServices from '@/services/EventServices'
-
 export default {
   props: ['id'],
-  data() {
-    return {
-      event: {}
-    }
-  },
   created() {
-    EventServices.getEvent(this.id)
-      .then(response => {
-        this.event = response.data
-      })
-      .catch(error => {
-        console.log(error)
-      })
+    this.$store.dispatch('fetchEvent', this.id)
+  },
+  computed: {
+    event() {
+      return this.$store.state.event
+    }
   }
 }
 </script>
