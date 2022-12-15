@@ -45,7 +45,6 @@
 
 <script>
 import { v4 as uuidv4 } from 'uuid'
-import EventServices from '@/services/EventServices.js'
 
 export default {
   data() {
@@ -78,13 +77,7 @@ export default {
         id: uuidv4(),
         organizer: this.$store.state.user
       }
-      EventServices.postEvent(event)
-        .then(() => {
-          this.$store.commit('ADD_EVENT', event)
-        })
-        .catch(error => {
-          console.log(error)
-        })
+      this.$store.dispatch('createEvent', event)
     }
   }
 }

@@ -29,26 +29,6 @@
       "date": "July 22, 2022",
       "time": "11:00",
       "organizer": "Carey Wales"
-    },
-    {
-      "id": "6b96fa5b-7413-4f33-ab1d-e2cd9bdccc4a",
-      "category": "community",
-      "title": "House Brushing Race",
-      "description": "a fun event",
-      "location": "New York",
-      "date": "August 18, 2028",
-      "time": "2:00",
-      "organizer": "John Doe"
-    },
-    {
-      "id": "1f94cbb0-aed3-4b56-8ab9-43ca353fa151",
-      "category": "animal welfare",
-      "title": "Kangaroo Combing Competition",
-      "description": "What does this event look like?",
-      "location": "Outback",
-      "date": "Sept 4, 2025",
-      "time": "3:00",
-      "organizer": "John Doe"
     }
   ]
 }

@@ -1,4 +1,5 @@
 import { createStore } from 'vuex'
+import EventServices from '@/services/EventServices.js'
 
 export default createStore({
   state: {
@@ -11,6 +12,16 @@ export default createStore({
       state.events.push(event)
     }
   },
-  actions: {},
+  actions: {
+    createEvent({ commit }, event) {
+      EventServices.postEvent(event)
+        .then(() => {
+          commit('ADD_EVENT', event)
+        })
+        .catch(error => {
+          console.log(error)
+        })
+    }
+  },
   modules: {}
 })
