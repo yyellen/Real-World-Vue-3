@@ -24,6 +24,7 @@ export default createStore({
       EventServices.postEvent(event)
         .then(() => {
           commit('ADD_EVENT', event)
+          commit('SET_EVENT', event)
         })
         .catch(error => {
           console.log(error)
