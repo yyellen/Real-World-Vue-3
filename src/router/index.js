@@ -4,6 +4,7 @@ import EventDetails from '../views/EventDetails.vue'
 import EventCreate from '../views/EventCreate.vue'
 import AboutView from '../views/AboutView.vue'
 import ErrorDisplay from '../views/ErrorDisplay.vue'
+import Page404 from '../views/Page404.vue'
 
 const routes = [
   {
@@ -32,6 +33,18 @@ const routes = [
     name: 'ErrorDisplay',
     props: true,
     component: ErrorDisplay
+  },
+  {
+    path: '/404',
+    name: '404',
+    component: Page404,
+    hidden: true
+  },
+  {
+    // 新版本(适用于vue3的vue-router)
+    path: '/:pathMatch(.*)',
+    redirect: '/404',
+    hidden: true
   }
 ]
 
